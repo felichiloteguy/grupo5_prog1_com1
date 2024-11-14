@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 header{
     background-color: black;
     height: 110px;
@@ -36,4 +40,13 @@ a{
     position: absolute;
     width: 155px;
     
+}
+.form-login{
+    position: absolute;
+    bottom: 30%;
+    background-color: rgba(208, 210, 212, 0.25);
+    
+    div{
+        padding: 10px;
+    }
 }
