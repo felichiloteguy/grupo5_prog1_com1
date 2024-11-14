@@ -15,7 +15,7 @@ fetch('https://dummyjson.com/recipes')
             <article class="recetas">
                  <img class= "image" src= "${receta.image}" alt="${receta.name}">
                   <h1><a class= "titulo" href="./detalle.html?id=${receta.id}"> ${receta.name}</a></h1>
-                  <p> Tiempo de preparación: ${receta.prepTimeMinutes}</p>
+                  <p> Duración: ${receta.prepTimeMinutes} minutos</p>
                   <p> Puntuación:  ${receta.rating}</p>
             </article>
             `;
