@@ -1,3 +1,6 @@
+let inicio= 0
+const suma= 10
+function cargarRecetas() {
 fetch('https://dummyjson.com/recipes')
     .then(function (response) {
         return response.json()
@@ -8,8 +11,7 @@ fetch('https://dummyjson.com/recipes')
         const menuRecetas= document.querySelector(".cuerpo");
         
         let recetas= "";
-        
-        for (let i = 0; i < data.recipes.length; i++) {
+        for (let i = inicio; i < inicio + suma && i < data.recipes.length ; i++) {
             const receta= data.recipes[i];
             recetas +=`
             <article class="recetas">
@@ -21,12 +23,14 @@ fetch('https://dummyjson.com/recipes')
             `;
                
         }
-        
-        
-        menuRecetas.innerHTML = recetas; 
-        
+        menuRecetas.innerHTML += recetas; 
+        inicio += suma
+       
     })
     .then(function (error) {
         console.log(`El error es:` + error);
         
-    })
+    });
+}
+document.querySelector("#cargarMas").addEventListener("click", cargarRecetas)
+cargarRecetas();

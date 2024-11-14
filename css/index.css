@@ -117,3 +117,14 @@ p{
     width: 40%;
     text-align: center
 }
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+#cargarMas{
+    background-color: #ad83309a;
+    color: black;
+    
+}
