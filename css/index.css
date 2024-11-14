@@ -6,17 +6,11 @@ body{
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header{
-    background-color: black;
-    height: 110px;
-    
-}
-
 ol,li{
     list-style-type: none;
     text-decoration: none;
-    padding: 100px;
-    padding-top: 15px;
+    padding: 50px;
+    padding-top: 8px;
     
     
 }
@@ -47,6 +41,10 @@ a{
 
 .cuerpo{
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 footer{
@@ -57,4 +55,39 @@ footer{
     margin-bottom: 0px;
     border-radius: 30px;
     font-weight: bold;
+}
+
+.recetas{
+    border-radius: 25px;
+    font-weight: bold;
+    width: 20%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ad83309a;
+    padding: 30px;
+}
+
+.image{
+    width: 150px;
+    border-radius: 30px;
+    align-self: center;
+}
+.titulo{
+    color: black;
+    text-decoration: underline;
+}
+
+.tituloPrincipal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 40px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #ad83309a;
+    border-radius: 30px;
 }
