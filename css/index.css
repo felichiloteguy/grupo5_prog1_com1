@@ -1,52 +1,50 @@
-*{
+* {
     box-sizing: border-box;
+    background-color: black;
 }
 
-header{
+header {
     background-color: black;
     height: 110px;
-    
+
 }
 
-ol,li{
+ol,
+li {
     list-style-type: none;
     text-decoration: none;
     padding: 100px;
     padding-top: 15px;
-    
-    
+
+
 }
-ol{
+
+ol {
     display: flex;
-    
+
 
 
 }
-a{
+
+a {
     text-decoration: none;
     color: #ad8330;
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    
+
 }
-.navegacion{
+
+.navegacion {
     display: flex;
     flex-direction: row;
     padding: 5px;
     justify-content: space-around;
 }
-.logo{
+
+.logo {
     position: absolute;
     width: 155px;
-    
+
 }
-.form-login{
-    position: absolute;
-    bottom: 30%;
-    background-color: rgba(208, 210, 212, 0.25);
-    
-    div{
-        padding: 10px;
-    }
-}
+
