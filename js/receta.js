@@ -15,11 +15,20 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         let image= document.querySelector(".imageR");
         image.src = `${data.image}`
         let caracteristicas= document.querySelector(".caracteristicas");
-        caracteristicas.innerHTML = `Dificultad:${data.difficulty}, Origen: ${data.cuisine}, Porciones: ${data.servings}`
+        caracteristicas.innerHTML = `Puntuación:${data.rating}, Origen: ${data.cuisine}, Porciones: ${data.servings}`
         let ingredientes= document.querySelector(".ingredientes");
         ingredientes.innerHTML = `${data.ingredients}`
         let pasos= document.querySelector(".pasos");
         pasos.innerHTML = `${data.instructions}`
+
+        const categoriasR= document.querySelector(".categorias");
+        categorias = "";
+         for (let index = 0; index < data.tags.length; index++) {
+        let categoria= data.tags[index]
+        categorias+= ` ${categoria} `
+         };
+    
+         categoriasR.innerHTML = categorias 
 
     })
     .then(function (error) {
