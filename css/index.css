@@ -1,22 +1,18 @@
-* {
+*{
     box-sizing: border-box;
-    background-color: black;
+    
 }
-
-header {
+body{
     background-color: black;
-    height: 110px;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-ol,
-li {
+ol,li{
     list-style-type: none;
     text-decoration: none;
-    padding: 100px;
-    padding-top: 15px;
-
-
+    padding: 50px;
+    padding-top: 8px;
+    
+    
 }
 
 ol {
@@ -30,7 +26,6 @@ a {
     text-decoration: none;
     color: #ad8330;
     font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 
 }
@@ -44,7 +39,110 @@ a {
 
 .logo {
     position: absolute;
-    width: 155px;
+    width: 200px;
+    
+}
 
+.cuerpo{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{
+    background-color: #ad83309a;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.recetas{
+    border-radius: 25px;
+    font-weight: bold;
+    width: 20%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ad83309a;
+    padding: 30px;
+}
+
+.image{
+    width: 150px;
+    border-radius: 30px;
+    align-self: center;
+}
+.titulo{
+    color: black;
+    text-decoration: underline;
+}
+
+.tituloPrincipal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 40px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #ad83309a;
+    border-radius: 30px;
+}
+
+.recipe{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ad83309a ;
+    color: black;
+    border-radius: 20px;
+}
+
+.imageR{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.caracteristicas{
+    font-weight: lighter;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40%;
+    text-align: center
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+#cargarMas{
+    background-color: #ad83309a;
+    color: black;
+    margin-bottom: 10px;
+    width: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: oblique;
+    border-radius: 25px;
+}
+
+.categorias{
+    color: black;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
 
