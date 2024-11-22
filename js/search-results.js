@@ -22,8 +22,7 @@ fetch('https://dummyjson.com/recipes')
             let resultados = [];
             for (let i = 0; i < data.recipes.length; i++) {
                 let recipe = data.recipes[i];
-                
-                if (recipe.name.indexOf(palabraBuscada) !== -1) {
+                if (recipe.name.toLowerCase().includes(palabraBuscada.toLowerCase())) {
                     resultados.push(recipe);
                 }
             }
@@ -48,5 +47,8 @@ fetch('https://dummyjson.com/recipes')
     .catch(function (error) {
         console.log(`El error es: ${error}`);
     });
+
+
+
 
 
