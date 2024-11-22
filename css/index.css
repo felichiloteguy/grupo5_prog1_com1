@@ -223,3 +223,29 @@ p{
     bottom: 5%;
     width: 100%;
 }
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 20px;
+}
+
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 80%;
+    margin: 5%;
+    background-color: #ad83309a;
+    padding: 30px;
+    .image{
+        width: 1000px;
+        border-radius: 30px ;
+    }
+}
