@@ -3,12 +3,12 @@ let obj = new URLSearchParams(queryString);
 let palabraBuscada = obj.get("search");
 console.log(palabraBuscada);
 
-fetch('https://dummyjson.com/recipes')
+fetch(`https://dummyjson.com/recipes/search?q=${palabraBuscada}`)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-        console.log(data);
+        console.log(data.recipes);
 
         let result = document.querySelector(".result");
 
@@ -21,11 +21,10 @@ fetch('https://dummyjson.com/recipes')
             result.innerText = "No hay recetas disponibles.";
         } else {
             let resultados = [];
+            
             for (let i = 0; i < data.recipes.length; i++) {
                 let recipe = data.recipes[i];
-                if (recipe.name.toLowerCase().includes(palabraBuscada.toLowerCase())) {
-                    resultados.push(recipe);
-                }
+                resultados.push(recipe);
             }
 
             if (resultados.length === 0) {
