@@ -1,6 +1,7 @@
 let queryString = location.search;
 let obj = new URLSearchParams(queryString);
-queryStringObj.get('search');
+let palabraBuscada = obj.get("search");
+console.log(palabraBuscada);
 
 fetch('https://dummyjson.com/recipes')
     .then(function (response) {
