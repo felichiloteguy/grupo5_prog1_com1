@@ -230,7 +230,6 @@ p{
     flex-direction: column;
     align-items: center;
     color: black;
-    border-radius: 20px;
 }
 
 .result{
@@ -241,15 +240,23 @@ p{
     border-radius: 25px;
     font-weight: bold;
     width: 80%;
-    margin: 5%;
+    margin: 30px;
     background-color: #ad83309a;
     padding: 30px;
-    .image{
-        width: 1000px;
+    .img-s{
+        width: 800px;
         border-radius: 30px ;
+        margin-top: 20px;
+    }
+    .ver{
+        color: rgb(53, 33, 7);
+        font-style: italic;
+        text-decoration: underline;
     }
 }
 
 #search{
-    background-color: #ad83309a;
+    background-color: #ad833061;
+    border-radius: 20px;
+    border: 1px solid,  rgb(245, 245, 211) ;
 }

@@ -35,9 +35,9 @@ fetch(`https://dummyjson.com/recipes/search?q=${palabraBuscada}`)
                     let recipe = resultados[i];
                     result.innerHTML += `
                         <div class="result-item">
-                            <img src="${recipe.image}" alt="${recipe.name}" />
+                            <img class= "img-s" src="${recipe.image}" alt="${recipe.name}" />
                             <h3>${recipe.name}</h3>
-                            <a href="./receta.html?id=${recipe.id}">Ver receta</a>
+                            <a class= "ver" href="./receta.html?id=${recipe.id}">Ver receta</a>
                         </div>
                     `;
                 }
