@@ -260,3 +260,14 @@ p{
     border-radius: 20px;
     border: 1px solid,  rgb(245, 245, 211) ;
 }
+
+@media (max-width: 420px){
+    .form-login{
+        margin-left: 50%;
+        bottom: 20%;
+    }
+    .footer-login{
+        margin-left: 50%;
+        width: 150%;
+    }
+}
