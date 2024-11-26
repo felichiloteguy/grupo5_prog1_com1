@@ -101,6 +101,7 @@ footer{
     background-color:#ad83309a ;
     color: black;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .imageR{
@@ -243,16 +244,16 @@ p{
     margin: 30px;
     background-color: #ad83309a;
     padding: 30px;
-    .img-s{
-        width: 800px;
-        border-radius: 30px ;
-        margin-top: 20px;
-    }
-    .ver{
-        color: rgb(53, 33, 7);
-        font-style: italic;
-        text-decoration: underline;
-    }
+}
+.img-s{
+    width: 800px;
+    border-radius: 30px ;
+    margin-top: 20px;
+}
+.ver{
+    color: rgb(53, 33, 7);
+    font-style: italic;
+    text-decoration: underline;
 }
 
 #search{
@@ -260,6 +261,53 @@ p{
     border-radius: 20px;
     border: 1px solid,  rgb(245, 245, 211) ;
 }
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+   flex-direction: column;
+    p{
+        width: 80px;
+    }
+}
+
+.categoria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cat{
+    justify-content: center;
+    width: 30%;
+    border: solid,#ad833061 ;
+    background-color: rgba(250, 235, 215, 0.403);
+    padding: 10px;
+    margin: 20px;
+    a{
+        text-decoration: underline;
+    }
+}
+
+.categoria-titulo{
+    background-color: #ad83304b;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.dificultad{
+    font-weight: lighter;
+    width: 300px;
+}
+
+.categoriasR{
+    color: black;
+    font-style: italic;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+}
+
 
 @media (max-width: 420px){
     .form-login{

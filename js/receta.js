@@ -21,17 +21,20 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         let pasos= document.querySelector(".pasos");
         pasos.innerHTML = `${data.instructions}`
 
-        const categoriasR= document.querySelector(".categorias");
-        categorias = "";
+        const categoriasR= document.querySelector(".categoriasR");
+        let categorias = ``;
          for (let index = 0; index < data.tags.length; index++) {
-        let categoria= data.tags[index]
-        categorias+= ` ${categoria} `
-         };
-    
-         categoriasR.innerHTML = categorias 
+            let categoria= data.tags[index]
+            categorias+= `
+            <li><a class="categoriasR" href="./categoria.html?tag=${categoria} "> ${categoria} </a> </li>
+             `
+            
+        };
+        
+        categoriasR.innerHTML = categorias;
 
     })
-    .then(function (error) {
+    .catch(function (error) {
         console.log(`El error es:` + error);
         
     })

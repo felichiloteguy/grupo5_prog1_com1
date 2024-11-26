@@ -13,7 +13,8 @@ fetch('https://dummyjson.com/recipes/tags')
     for(let i = 0; i < data.length; i++){
         const categoria = data[i];
         categorias +=
-    `<ol>
+    `
+    <ol class="cat">
     <li> <a href="./categoria.html?tag=${categoria}">${categoria}</a></li>
     </ol>
         `
