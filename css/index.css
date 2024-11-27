@@ -4,20 +4,26 @@
 }
 
 body {
-    background-color: #fddbf6;
+    background-color: #f2eadf;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 ol,
 li {
     list-style-type: none;
     text-decoration: none;
-    padding: 50px;
+    padding: 25px;
     padding-top: 8px;
 }
 
 ol {
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 a {
@@ -33,15 +39,14 @@ a {
 
 .navegacion {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     padding: 5px;
-    justify-content: space-around;
 }
 
 .logo {
+    vertical-align: middle;
     position: absolute;
     width: 170px;
-
 }
 
 .cuerpo {
@@ -107,7 +112,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e02e2e;
+    background-color: #2c2e63;
     border-radius: 30px;
     height: 100px;
     justify-content: center;
