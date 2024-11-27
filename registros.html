@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:ital,wght@1,800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <header>
         <img class="logo" src="./img/recetas-removebg-preview.png" alt="logo">
         <section class="navegacion">
-        <nav>
-            <ol>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./categorias.html">Categorias</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./registros.html">Registro</a></li>
-                <li><form action="./search-results.html" method="get"><input type="search" name="search" id="search" value=""> <button type="submit" value="buscar">Buscar</button></form></li>
-            </ol>
-        </nav>
-     </section>
-</header>
-<main class="center-container">
-    <div class="form-login">
-        <h2>Crear una cuenta</h2>
-        <form action="results.html" method="GET">
-            <div>
-                <label for="email"></label>
-        <input id="email" type="email" name="email" placeholder="email" required>
-            </div>
+            <nav>
+                <ol>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./categorias.html">Categorias</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./registros.html">Registro</a></li>
+                    <li>
+                        <form action="./search-results.html" method="get"><input type="search" name="search" id="search"
+                                value=""> <button type="submit" value="buscar">Buscar</button></form>
+                    </li>
+                </ol>
+            </nav>
+        </section>
+    </header>
+    <main class="center-container">
+        <div class="form-login">
+            <h2>Crear una cuenta</h2
+            <form action="results.html" method="GET">
+                <div>
+                    <label for="email"></label>
+                    <input id="email" type="email" name="email" placeholder="email" required>
+                </div>
 
-            <div>
-                <label for="password"></label>
-        <input id="password" type="password" name="password" placeholder="contraseña" required>
-            </div>
+                <div>
+                    <label for="password"></label>
+                    <input id="password" type="password" name="password" placeholder="contraseña" required>
+                </div>
 
-            <div class="checkbox-container">
-                <input id="terms" type="checkbox" name="terms" required>
-                <label for="terms">Acepto los Términos y Condiciones</label>
-              </div>
-              <div class="ingresar">
-                <button type="submit">Registrarse</button> 
-       </div> 
-    </form>
-        <a href="./login.html" class="no-cuenta">¿Ya tienes cuenta?</a>
-        
-    </div>
-</main>
-<footer class="footer-login">
-    <p>Clara Schmidt | Felicitas Chiloteguy | Mailen Hong</p>
-</footer>
+                <div class="checkbox-container">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    <label for="terms">Acepto los Términos y Condiciones</label>
+                </div>
+                <div class="ingresar">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+            <a href="./login.html" class="no-cuenta">¿Ya tienes cuenta?</a>
+
+        </div>
+    </main>
+    <footer class="footer-login">
+        <p>Clara Schmidt | Felicitas Chiloteguy | Mailen Hong</p>
+    </footer>
 </body>
 </html>
