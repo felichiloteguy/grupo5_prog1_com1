@@ -3,8 +3,8 @@ let parametro = new URLSearchParams(queryString);
 let category = parametro.get("tag");
 
 
-let categoriaItem = document.querySelector(".categoria-item")
-categoriaItem.innertext = `categoria:${category}`
+let categoriasItem = document.querySelector(".categoriasItem")
+categoriasItem.innerHTML = ` Estas viendo la categoria: ${category}`
 
 
 fetch ('https://dummyjson.com/recipes')
@@ -15,8 +15,7 @@ fetch ('https://dummyjson.com/recipes')
 
 .then(function(data){
 const receta = data.recipes;
-const recetas = document.querySelector(".categorias-item")
-let recipe = "";
+const recetas = document.querySelector(".categoria-item")
     
 for(let index = 0; index< receta.length; index++) {
     const recetario = receta[index];
