@@ -445,59 +445,83 @@ input[type="checkbox"]{
     font-style: italic;
 }
 
-
 @media (max-width: 420px) {
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px;
     }
-    header{
-        display: flex;
-        flex-direction: column;
-    }
+
     .logo {
-        display: none;
+        max-width: 120px; 
+        margin-bottom: 2px;
     }
 
-
-    .top {
-        margin-top: 160px;
+    .navegacion ol {
+        flex-direction: column; 
+        width: 100%; 
     }
 
+    .navegacion li {
+        padding: 5px;
+        margin: 0px;
+        text-align: center; 
+    }
 
+    form {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    form input[type="search"] {
+        width: 80%;
+        margin-right: 10px; 
+    }
+
+    form button {
+        width: 25%; 
+    }
     .result {
         margin-top: 80%;
     }
-
-
-    ol,
-    li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        height: 10px;
-        align-items: center;
-    }
-
-
-    ol {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-
-    form {
-        position: absolute;
-        top: 0;
-        margin-top: 20px;
-    }
-
-
-    .recetas {
+    .recetas, .recipe{
         width: 80%;
     }
+
+    .categorias{ 
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        
+    }
+    .categoria{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        a{
+            font-size: 90%;
+        }
+    }
+
+    .categoria-titulo{
+        width: 100%;
+        margin-top: 0%;
+        font-size: 20px;
+    }
+    
+    .form-login {
+        padding: 15px;
+        width: 100%;
+        max-width: 320px; 
+    }
+
+    .footer-login {
+        display: none;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
 }
