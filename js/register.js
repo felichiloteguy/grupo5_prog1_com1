@@ -1,29 +1,30 @@
-let formulario = document.querySelector("formRegister");
+let formulario = document.querySelector(".formRegister");
 let email = document.querySelector("#email");
 let errorEmail = document.querySelector(".email-error");
 
 let password = document.querySelector("#password");
 let errorPassword = document.querySelector(".password-error");
 
-formulario.addEventListener("submit", function(e) {
+formulario.addEventListener("submit" , function (e){
     e.preventDefault();
+
+    errorEmail.style.display = "";
+    errorPassword.style.display = "";
 
     let valida = true;
 
     if(email.value === ""){
-        errorEmail.textContent = "Por favor complete el campo Email" ;
+        errorEmail.style.display = "block";
+        errorEmail.innerText = "Por favor complete el campo Email";
         valida = false;
-    } else{
-        errorEmail.textContent = "";
     }
 
-    if (password.value === ""){
-        errorPassword.textContent = "Por favor complete el campo contraseña";
-        valida = false;
-    } else{
-        errorPassword.textContent = "";
+    if(password.value ===""){
+        errorPassword.style.display = "block";
+        errorPassword.innerText = "Por favor complete el campo Contraseña";
+        valida = false
     }
-    if (valida) {
-        window.location.href = "login.html";
-    }
+     if(valida){
+        this.submit();
+     }
 })

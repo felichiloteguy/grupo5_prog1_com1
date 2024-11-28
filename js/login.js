@@ -20,6 +20,6 @@ form.addEventListener("submit", function (e) {
     }
     
     if(valida){
-        window.location.href = "home.html"
-    }
+        this.submit();
+     }
 })

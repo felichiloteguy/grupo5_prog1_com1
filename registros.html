@@ -23,28 +23,28 @@
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./registros.html">Registro</a></li>
                 <li>
-                    <form action="./search-results.html" method="get"><input type="search" name="search" id="search"
-                            value=""> <button class="button" type="submit" value="buscar">Buscar</button></form>
+                    <form action="./search-results.html" method="get">
+                        <input type="search" name="search" id="search" placeholder="Buscar"> 
+                        <button class="button" type="submit">Buscar</button>
+                    </form>
                 </li>
             </ol>
-
         </nav>
-
     </header>
     <main class="center-container">
         <div class="form-register">
             <h2>Crear una cuenta</h2>
-            <form action="results.html" method="GET" class="formRegister">
+            <form action="login.html" method="GET" class="formRegister">
                 <div>
                     <label for="email"></label>
-                    <input id="email" type="email" name="email" placeholder="email" required>
+                    <input id="email" type="email" name="email" placeholder="email">
+                    <div class="email-error"></div>
                 </div>
-
                 <div>
                     <label for="password"></label>
-                    <input id="password" type="password" name="password" placeholder="contraseña" required>
+                    <input id="password" type="password" name="password" placeholder="contraseña">
+                    <div class="password-error"></div>
                 </div>
-
                 <div class="checkbox-container">
                     <input id="terms" type="checkbox" name="terms" required>
                     <label for="terms">Acepto los Términos y Condiciones</label>
@@ -53,14 +53,15 @@
                     <button type="submit">Registrarse</button>
                 </div>
             </form>
-            <a href="./login.html" class="no-cuenta">¿Ya tienes cuenta?</a>
 
+            <a href="./login.html" class="no-cuenta">¿Ya tienes cuenta?</a>
         </div>
     </main>
+
     <footer class="footer-login">
         <p>Clara Schmidt | Felicitas Chiloteguy | Mailen Hong</p>
     </footer>
 
-    <script src="js/register.js"></script>
+    <script src="./js/register.js"></script>
 </body>
 </html>
