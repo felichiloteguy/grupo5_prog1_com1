@@ -165,15 +165,20 @@ p {
     font-style: italic;
 }
 
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+}
+
 .form-login {
     position: absolute;
-    bottom: 28%;
+    bottom: 23%;
     display: flex;
     flex-direction: column;
-    width: 475px;
+    width: 530px;
     background-color: rgba(96, 96, 96, 0.092);
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
 
     div {
         padding: 10px;
@@ -336,5 +341,11 @@ p {
     font-weight: lighter;
     display: flex;
     flex-direction: row;
+}
+
+.center-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
 }
 
