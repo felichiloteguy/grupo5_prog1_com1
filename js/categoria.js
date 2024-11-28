@@ -4,7 +4,7 @@ let category = parametro.get("tag");
 
 
 let categoriasItem = document.querySelector(".categoriasItem")
-categoriasItem.innerHTML = ` Has buscado la categoria: ${category}`
+categoriasItem.innerHTML = ` Estas viendo la categoria: ${category}`
 
 
 fetch ('https://dummyjson.com/recipes')
