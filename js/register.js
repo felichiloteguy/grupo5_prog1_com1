@@ -1,12 +1,29 @@
-let form = document.querySelector('form-login form');
-let emailInput = document.querySelector('email');
-let errorEmail = document.querySelector ('#email')
+let formulario = document.querySelector("formRegister");
+let email = document.querySelector("#email");
+let errorEmail = document.querySelector(".email-error");
 
+let password = document.querySelector("#password");
+let errorPassword = document.querySelector(".password-error");
 
-let passwordInput = document.querySelector('password');
-let errorPassword = document.querySelector('#password')
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-let termsCheckbox = document.querySelector('terms');
+    let valida = true;
 
-let submitButton = document.querySelector('.ingresar button');
+    if(email.value === ""){
+        errorEmail.textContent = "Por favor complete el campo Email" ;
+        valida = false;
+    } else{
+        errorEmail.textContent = "";
+    }
 
+    if (password.value === ""){
+        errorPassword.textContent = "Por favor complete el campo contraseña";
+        valida = false;
+    } else{
+        errorPassword.textContent = "";
+    }
+    if (valida) {
+        window.location.href = "login.html";
+    }
+})
