@@ -15,7 +15,7 @@ fetch('https://dummyjson.com/recipes/tags')
         categorias +=
     `
     <ol class="cat">
-    <li> <a href="./categoria.html?tag=${categoria}">${categoria}</a></li>
+    <li> <a href="./categorias.html?tag=${categoria}">${categoria}</a></li>
     </ol>
         `
     }

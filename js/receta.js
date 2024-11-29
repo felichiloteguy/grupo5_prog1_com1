@@ -20,13 +20,15 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         ingredientes.innerHTML = `${data.ingredients}`
         let pasos= document.querySelector(".pasos");
         pasos.innerHTML = `${data.instructions}`
+        let dificultad= document.querySelector(".tiempo");
+        dificultad.innerHTML = `${data.prepTimeMinutes} minutos`
 
         const categoriasR= document.querySelector(".categoriasR");
         let categorias = ``;
          for (let index = 0; index < data.tags.length; index++) {
             let categoria= data.tags[index]
             categorias+= `
-            <li><a class="categoriasR" href="./categoria.html?tag=${categoria} "> ${categoria} </a> </li>
+            <li><a class="categoriasR" href="./category.html?tag=${categoria} "> ${categoria} </a> </li>
              `
             
         };

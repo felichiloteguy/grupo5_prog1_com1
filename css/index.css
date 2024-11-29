@@ -7,18 +7,20 @@ body {
     background-color: #f2eadf;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header{
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 ol,
 li {
     padding: 20px;
     margin: 20px;
     list-style-type: none;
     text-decoration: none;
-    
+
 }
 
 ol {
@@ -73,7 +75,7 @@ footer {
 .recetas {
     font-weight: bold;
     width: 20%;
-    margin: 5%;
+    margin: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,7 +172,7 @@ p {
     font-style: italic;
 }
 
-.checkbox-container{
+.checkbox-container {
     display: flex;
     flex-direction: row;
 }
@@ -226,7 +228,7 @@ p {
     }
 }
 
-.login{
+.login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,7 +301,7 @@ p {
     background-color: #f0f0e5;
 }
 
-.button{
+.button {
     border-radius: 20px;
     border: 3px solid #2c2e63;
     background-color: #f0f0e5;
@@ -404,19 +406,18 @@ input {
     border-radius: 20px;
     padding: 0 16px;
 }
-.checkbox-container{
+
+.checkbox-container {
     display: flex;
     align-items: center;
+    input {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
 }
 
-input[type="checkbox"]{
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-}
-
-
-.categoriasItem{
+.categoriasItem {
     background-color: #2c2e63;
     color: #f0f0e5;
     border-radius: 25px;
@@ -428,26 +429,54 @@ input[type="checkbox"]{
 }
 
 @media (max-width: 420px) {
+    .top {
+        height: 70px;
+    }
+
+    .tituloPrincipal {
+        font-size: 40px;
+    }
+
     header {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
+        height: 260px;
+
+        a {
+            font-size: 15px;
+        }
+
+        #search {
+            height: 20px;
+            font-size: 10px;
+            width: 80%;
+            margin-right: 10px;
+        }
+
+        .button {
+            height: 20px;
+            font-size: 10px;
+        }
     }
 
     .logo {
-        max-width: 120px; 
-        margin-bottom: 2px;
+        max-width: 95px;
+        margin-bottom: 1px;
     }
 
     .navegacion ol {
-        flex-direction: column; 
-        width: 100%; 
+        flex-direction: column;
+        width: 100%;
+        max-height: 230px;
+        margin: 0px;
+        padding: 0px;
     }
 
     .navegacion li {
-        padding: 5px;
+        padding: 2px;
         margin: 0px;
-        text-align: center; 
+        text-align: center;
     }
 
     form {
@@ -457,64 +486,124 @@ input[type="checkbox"]{
         margin-top: 10px;
     }
 
-    form input[type="search"] {
-        width: 80%;
-        margin-right: 10px; 
+    button {
+        width: 25%;
     }
 
-    form button {
-        width: 25%; 
-    }
     .result {
         margin-top: 80%;
     }
-    .recetas, .recipe{
-        width: 80%;
+
+    .recipe {
+        width: 90%;
+        margin-left: 20px;
+
+        .imageR {
+            width: 70%;
+        }
     }
 
-    .categorias{ 
+    .recetas {
+        width: 90%;
+    }
+
+    .categorias {
         display: flex;
         flex-wrap: wrap;
         padding: 10px;
-        
+
     }
-    .categoria{
+
+    .categoria {
         flex-direction: row;
         width: 100%;
         justify-content: center;
-        a{
+
+        a {
             font-size: 90%;
         }
     }
 
-    .categoria-titulo{
+    .categoria-titulo {
         width: 100%;
         margin-top: 0%;
         font-size: 20px;
     }
-    
-    .form-login{
+
+    .form-login {
         display: flex;
-        padding: 15px;
+        padding: 0px;
         width: 90%;
+        margin-top: 20px;
+
+        div {
+            padding: 7px;
+        }
+
+        h2 {
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        input {
+            width: 100%;
+            height: 20px;
+            font-size: 10px;
+        }
+
+        .checkbox-container {
+            width: 30%;
+            font-size: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        button {
+            width: 100%;
+            font-size: 10px;
+            height: 20px;
+        }
+
+        .no-cuenta {
+            width: 100%;
+            font-size: 10px;
+            height: 20px;
+        }
+
     }
-    .contact-form{
+
+    .contact-form {
         flex-direction: column;
         align-items: center;
     }
-    footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0%;
-    width: 100%;
-    }
-    .footer-login{
+
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 0%;
         width: 100%;
     }
-        
+
+    .footer-login {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0%;
+        width: 100%;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .cat {
+        justify-content: center;
+        width: 25%;
+        height: 150px;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 25px;
+
+        li {
+            margin-top: 0%;
+        }
+    }
 }

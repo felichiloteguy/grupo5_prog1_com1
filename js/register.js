@@ -1,4 +1,4 @@
-let formulario = document.querySelector(".formRegister");
+let formulario = document.querySelector(".contact-form");
 let email = document.querySelector("#email");
 let errorEmail = document.querySelector(".email-error");
 
@@ -24,7 +24,7 @@ formulario.addEventListener("submit" , function (e){
         errorPassword.innerText = "Por favor complete el campo Contraseña";
         valida = false
     }
-     if(valida){
-        this.submit();
-     }
+    if(valida){
+    this.submit();
+    }
 })

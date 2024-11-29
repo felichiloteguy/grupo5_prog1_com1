@@ -16,6 +16,10 @@ fetch(`https://dummyjson.com/recipes/search?q=${palabraBuscada}`)
             result.innerText = "No se ingresó ninguna búsqueda.";
             return;
         }
+        if (palabraBuscada.length < 3) {
+            result.innerText= "La busqueda debe tener al menos 3 caracteres"
+            return;
+        }
 
         if (!data.recipes || data.recipes.length === 0) {
             result.innerText = "No hay recetas disponibles.";
