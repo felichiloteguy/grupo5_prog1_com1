@@ -252,7 +252,7 @@ p {
 
 .footer-login {
     position: absolute;
-    bottom: 5%;
+    bottom: 0%;
     width: 100%;
 }
 
@@ -366,24 +366,6 @@ p {
     flex-direction: row;
 }
 
-.center-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 30%;
-}
-
-
-.form-register{
-align-items: center;
-position: absolute;
-bottom: 23%;
-display: flex;
-flex-direction: column;
-width: 475px;
-background-color: rgba(96, 96, 96, 0.092);
-border-radius: 20px;
-padding: 20px;
-
 div {
     padding: 10px;
     color: black;
@@ -432,7 +414,7 @@ input[type="checkbox"]{
     height: 16px;
     margin-right: 5px;
 }
-}
+
 
 .categoriasItem{
     background-color: #2c2e63;
@@ -511,12 +493,12 @@ input[type="checkbox"]{
         font-size: 20px;
     }
     
-    .form-login , .form-register{
+    .form-login{
         display: flex;
         padding: 15px;
-        width: 100%;
+        width: 90%;
     }
-    .contact-form, .formRegister{
+    .contact-form{
         flex-direction: column;
         align-items: center;
     }
@@ -526,13 +508,13 @@ input[type="checkbox"]{
     align-items: center;
     margin-bottom: 0%;
     width: 100%;
-}
-
-    .center-container{
-        width: 100%;
-        display: flex;
-        
     }
-
-
+    .footer-login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0%;
+        width: 100%;
+    }
+        
 }
