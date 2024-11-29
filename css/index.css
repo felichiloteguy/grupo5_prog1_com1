@@ -511,17 +511,28 @@ input[type="checkbox"]{
         font-size: 20px;
     }
     
-    .form-login {
+    .form-login , .form-register{
+        display: flex;
         padding: 15px;
         width: 100%;
-        max-width: 320px; 
     }
-
-    .footer-login {
-        display: none;
-    position: absolute;
-    bottom: 0%;
+    .contact-form, .formRegister{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
     width: 100%;
 }
+
+    .center-container{
+        width: 100%;
+        display: flex;
+        
+    }
+
 
 }
