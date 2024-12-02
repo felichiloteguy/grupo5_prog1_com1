@@ -607,4 +607,8 @@ input {
             margin-top: 0%;
         }
     }
+
+    .img-s{
+        width: 60%;
+    }
 }
